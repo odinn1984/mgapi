@@ -12,9 +12,9 @@ $ curl 'http://localhost:3000/api/v1/maze/random/<rows>/<columns>/[algorithm]'
 
 Where the parameters are:
 
-`rows` - The number or rows in the generated maze
-`columns` - The number or columns in the generated maze
-`algorithm` - [Optional] The algorithm that is used to generate the maze. Currently only supports `RDFS` (Default: `RDFS`)
+- `rows` - The number or rows in the generated maze
+- `columns` - The number or columns in the generated maze
+- `algorithm` - [Optional] The algorithm that is used to generate the maze. Currently only supports `RDFS` (Default: `RDFS`)
 
 The response for this endpoint is:
 
