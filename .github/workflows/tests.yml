@@ -1,0 +1,14 @@
+name: Tests
+on: [pull_request]
+
+jobs:
+  E2ETests:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm ci
+    - name: Run e2e tests
+      run: npm run test:e2e
